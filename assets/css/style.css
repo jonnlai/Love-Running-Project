@@ -100,10 +100,11 @@ main {
     /* Make main element take up surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Hero section */
-
 #hero {
     height: 600px;
     width: 100%;
@@ -207,6 +208,52 @@ hr {
     line-height: 0;
 }
 
+/* Signup form */
+#signup {
+    background-image: url("../images/signup-image.webp");
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
+}
+
+#signup-form > h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+#signup-form {
+    padding: 30px;
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, .6);
+}
+
+.text-input {
+    color: #fafafa;
+    background: transparent;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    margin: 5px 0 20px 0;
+    padding: 0 5px;
+    height: 25px;
+    width: 100%;
+}
+
+.radio-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.join-button {
+    margin-top: 20px;
+    padding: 15px 32px;
+    border-radius: 2px;
+    background-color: #454b1b;
+    color: #fafafa;
+    font-size: 100%;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
@@ -294,6 +341,28 @@ hr {
     /* Gallery */
     #photos {
         column-count: 3;
+    }
+
+    /* Signup section */
+    #signup {
+        background-position: center;
+        position: relative;
+    }
+
+    #signup-form {
+        position: absolute;
+        max-width: 400px;
+        left: 10%;
+        top: 150px;
+    }
+
+    .join-button:hover {
+        background-color: #fafafa;
+        color: #454b1b;
+    }
+
+    .text-input:hover {
+        border-color: #f16c6b;
     }
 }
 
